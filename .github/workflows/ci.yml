@@ -16,4 +16,4 @@ jobs:
       run: bash -n backup.sh
 
     - name: date view
-      run: daten
+      run: date
