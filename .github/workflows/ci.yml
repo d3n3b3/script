@@ -1,0 +1,19 @@
+name: Backup script CI
+
+on:
+  push:
+    branches:
+     - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Cloning repo
+      uses: actions/checkout@v3
+
+    - name: Linter
+     run: bash -n backup.sh
+
+    - name: date view
+     run: daten
